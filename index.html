@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="gradient-background">
+    <div id="msg">
+        <span class="material-symbols-outlined" style="margin-right: 10px;">error</span>
+        <h4> Error : Exceeded max amount of digits. </h4>
+    </div>
+    <div class="container">
+        <div class="resultbox"></div>
+        <div class="board">
+            <button class="numbers ops" onclick="print('cl')" style="font-size: 25px;">AC</button>
+            <button class="numbers ops" onclick="print('x')">x</button>
+            <button class="numbers ops" onclick="print('÷')">÷</button>
+            <button class="numbers ops" onclick="print('del')">
+                <span class="material-symbols-outlined" style="font-size: 30px;">backspace</span>
+            </button>
+            <button class="numbers" onclick="print(7)">7</button>
+            <button class="numbers" onclick="print(8)">8</button>
+            <button class="numbers" onclick="print(9)">9</button>
+            <button class="numbers ops" onclick="print('+')">+</button>
+            <button class="numbers" onclick="print(4)">4</button>
+            <button class="numbers" onclick="print(5)">5</button>
+            <button class="numbers" onclick="print(6)">6</button>
+            <button class="numbers ops" onclick="print('-')">-</button>
+            <button class="numbers" onclick="print(1)">1</button>
+            <button class="numbers" onclick="print(2)">2</button>
+            <button class="numbers" onclick="print(3)">3</button>
+            <button class="numbers ops" onclick="print('.')">.</button>
+            <button class="numbers" onclick="print(0)">0</button>
+            <button class="numbers equalsign" onclick="eq()">=</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
